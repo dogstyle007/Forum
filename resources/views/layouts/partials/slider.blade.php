@@ -13,7 +13,7 @@
       <a href="#"><img src="http://localhost/forum/public/image/wiuc-campus.jpg" /></a>
       	<div class="hero">
         <hgroup>
-            <h3>Welcome to Wisconsin International University College Forum</h3>        
+            <h3>Welcome to Wisconsin International University College Src Forum</h3>        
             <h3>Welcome on board :) </h3>
         </hgroup>
         

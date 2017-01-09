@@ -15,7 +15,7 @@
    		<br/>
 
       {!! Form::label('index', 'Student Index') !!}
-      {!! Form::text('index', null, ['id' => 'index', 'class' => 'form-control', 'placeholder' => 'Example: wiuc/00/0000', 'required']) !!}
+      {!! Form::text('index', null, ['id' => 'index', 'class' => 'form-control', 'placeholder' => 'Example: wiuc-00-0000', 'required']) !!}
       <br/>
 
       {!! Form::label('dept', 'Department') !!}

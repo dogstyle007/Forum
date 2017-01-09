@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <img src="http://localhost/forum/public/image/WIUC-LOGO.png"> <a href="http://localhost/forum/public/" class="g" title="Wisconsin I.T Forum"> {Wizzy|Hub}</a>
+      <img src="http://localhost/forum/public/image/WIUC-LOGO.png"> <a href="http://localhost/forum/public/" class="g" title="Wisconsin I.T Forum"> WIUC SRC FORUM</a>
     </div>
     <br>
     <!-- Collect the nav links, forms, and other content for toggling -->
