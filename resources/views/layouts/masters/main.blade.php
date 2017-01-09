@@ -24,6 +24,8 @@
 
     <link href="http://localhost/forum/public/css/slider.css" rel="stylesheet">
 
+    <link href="http://localhost/forum/public/css/profile.css" rel="stylesheet">
+
      <link href="http://localhost/forum/public/css/sweetalert.css" rel="stylesheet">
 
    <!-- <link href="http://localhost/forum/public/css/summernote.css" rel="stylesheet"> -->
@@ -53,7 +55,7 @@
     
    <center>
 
-            <a href="http://localhost/forum/public/" class="g" title="Wisconsin I.T Forum">Wisconsin Forum</a>
+            <a href="http://localhost/forum/public/"  class="g" title="Wisconsin I.T Forum">Wisconsin Forum</a>
 
             @if( ! $currentUser )
             
@@ -89,10 +91,13 @@
 
   @yield ('page-content')
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
     <script src="http://localhost/forum/public/js/bootstrap.min.js"></script>
+  
     <script src="http://localhost/forum/public/js/sweetalert.min.js"></script>
     <script src="http://localhost/forum/public/js/script.js"></script>
+    
     <script src="http://localhost/forum/public/summernote/summernote.js"></script>
    <!-- <script src="http://cdn.ckeditor.com/4.6.0/basic/ckeditor.js"></script>-->
 

@@ -14,14 +14,6 @@
    		{!! Form::text('name', null, ['id' => 'name', 'class' => 'form-control', 'placeholder' => 'Full Name', 'required']) !!}
    		<br/>
 
-      {!! Form::label('index', 'Student Index') !!}
-      {!! Form::text('index', null, ['id' => 'index', 'class' => 'form-control', 'placeholder' => 'Example: wiuc/00/0000', 'required']) !!}
-      <br/>
-
-      {!! Form::label('dept', 'Department') !!}
-      {!! Form::text('dept', null, ['id' => 'dept', 'class' => 'form-control', 'placeholder' => 'Example: Wcom', 'required']) !!}
-      <br/>
-
       {!! Form::label('gender', 'Gender') !!}
       {!! Form::text('gender', null, ['id' => 'gender', 'class' => 'form-control', 'placeholder' => 'Example: Male or Female', 'required']) !!}
       <br/>
@@ -38,6 +30,7 @@
 		{!! Form::close() !!}
 
     <br>
+
     <br>
     @include('layouts.partials.footer')
 

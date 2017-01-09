@@ -24,7 +24,7 @@
             <div class="media-body">
              <h4> <a href="http://localhost/forum/public/question/{{$post->slug}}">{{$post->title}}</a></h4>
 
-              <p class="text-right"> By: {{$post->user->name}} <img src="/forum/public/uploads/avatars/{{ $post->user->avatar }}" style="width:32px; height:32px; top:10px; left:10px; border-radius:50%"></p>
+              <p class="text-right"> By: {{$post->user->name}} <img src="/forum/public/uploads/avatars/{{ $post->user->avatar }}" style="width:32px; height:32px; top:10px; left:10px; border-radius:50%"> <br> {{$post->user->dept }} </p>
 
               {!! Markdown::parse ($post->body) !!}
               
@@ -41,7 +41,7 @@
              <div class="media">
                 <div class="media-body">
 
-                  <p class="text-right">By: {{$reply->user->name}} <img src="/forum/public/uploads/avatars/{{ $reply->user->avatar }}" style="width:32px; height:32px; top:10px; left:10px; border-radius:50%"></p>
+                  <p class="text-right">By: {{$reply->user->name}} <img src="/forum/public/uploads/avatars/{{ $reply->user->avatar }}" style="width:32px; height:32px; top:10px; left:10px; border-radius:50%"> <br> {{$reply->user->dept }} </p>
 
                     <p>{{$reply->body}}</p>
 
@@ -103,14 +103,14 @@
     @endif
 
 
-<br>
+  <br>
 
 
- @include('layouts.partials.footer')
+ 
 
 
   </div>
 
-  
+@include('layouts.partials.footer')  
 
 @stop

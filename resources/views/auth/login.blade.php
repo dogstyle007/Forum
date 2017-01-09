@@ -4,14 +4,17 @@
 
    <div class="container">
 
+
+      <center> <img src="http://localhost/forum/public/image/WIUC-LOGO.png"> <h2>WIUC STUDENT FORUM LOGIN</h2></center>
+
    		{{--@include('layouts.partials.nav')--}}
 
       @include('layouts.partials.form_errors')
 
    		{!! Form::open(['route' => 'post_login', 'id' => 'registration-form']) !!}
   
-   		{!! Form::label('email', 'Email Address') !!}
-   		{!! Form::email('email', null, ['id' => 'email', 'class' => 'form-control', 'placeholder' => 'Email Address', 'required']) !!}
+   		{!! Form::label('index', 'Student Index Number') !!}
+   		{!! Form::text('index', null, ['id' => 'index', 'class' => 'form-control', 'placeholder' => 'Example: wiuc/00/0000', 'required']) !!}
    		<br/>
    		{!! Form::label('password', 'Password') !!}
    		{!! Form::password('password', ['id' => 'password', 'class' => 'form-control', 'placeholder' => 'Password', 'required']) !!}
@@ -22,9 +25,10 @@
 
     <br>
 
-    @include('layouts.partials.footer')
 
     </div> <!-- /container -->
+
+    @include('layouts.partials.footer')
 
     
 

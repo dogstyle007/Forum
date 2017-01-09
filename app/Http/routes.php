@@ -16,6 +16,30 @@ Route::get('/', [
   'uses' => 'PagesController@home'
 ]);
 
+Route::get('about',[
+	'uses' => 'PagesController@about'
+
+	]);
+
+Route::get('terms',[
+	'uses' => 'PagesController@terms'
+
+	]);
+
+Route::get('privacy',[
+	'uses' => 'PagesController@privacy'
+
+	]);
+
+Route::get('account',[
+	'uses' => 'PagesController@account'
+
+	]);
+
+Route::get('modal', 'PagesController@modal');
+
+
+
 
 Route::get('profile', 'UserController@profile');
 Route::post('profile', 'UserController@update_avatar');
@@ -27,10 +51,22 @@ Route::group(['prefix' => 'auth'], function(){
 		'uses' => 'Auth\AuthController@getRegister'
 		]);
 
+	
 	Route::post('register', [
 		'as' => 'post_register',
 		'uses' => 'Auth\AuthController@postRegister'
 	]);
+
+	Route::get('guest_register', [
+		'as' => 'get_guest_register',
+		'uses' => 'Auth\AuthController@getGuestRegister'
+		]);
+
+	Route::post('guest_register', [
+		'as' => 'post_guest_register',
+		'uses' => 'Auth\AuthController@postGuestRegister'
+	]);
+
 
 	Route::get('login', [
 		'as' => 'get_login',
@@ -93,7 +129,6 @@ Route::group(['prefix' => 'question'], function(){
 		'uses' => 'ForumController@deleteReply'
 		]);
 
-	
 
 
 });

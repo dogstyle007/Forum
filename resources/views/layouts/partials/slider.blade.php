@@ -1,3 +1,5 @@
+<div class="container">
+
 <section class="jk-slider">
     <div id="carousel-example" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -11,8 +13,8 @@
       <a href="#"><img src="http://localhost/forum/public/image/wiuc-campus.jpg" /></a>
       	<div class="hero">
         <hgroup>
-            <h2>Welcome to Wisconsin International University College Forum</h2>        
-            <h3>Where Best Minds Meet :) </h3>
+            <h3>Welcome to Wisconsin International University College Forum</h3>        
+            <h3>Welcome on board :) </h3>
         </hgroup>
         
       </div>
@@ -50,3 +52,4 @@
 </div>
 	
 </section>
+</div>

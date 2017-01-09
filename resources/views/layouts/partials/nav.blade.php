@@ -1,4 +1,4 @@
-
+<div class="container">
 <nav class="navbar navbar-default header-top">
   
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -9,9 +9,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="http://localhost/forum/public/" class="g" title="Wisconsin I.T Forum"> {Wizzy|Hub}</a>
+      <img src="http://localhost/forum/public/image/WIUC-LOGO.png"> <a href="http://localhost/forum/public/" class="g" title="Wisconsin I.T Forum"> {Wizzy|Hub}</a>
     </div>
-
+    <br>
     <!-- Collect the nav links, forms, and other content for toggling -->
     
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -23,7 +23,14 @@
             <li><a>Welcome, <b>Guest:</b></a></li>
             <li><a href="http://localhost/forum/public/">Home</a></li>
             <li><a href="{{ route('get_login')}}"> <b>LOGIN!</b></a></li>
-            <li><a href="{{ route('get_register')}}">Register</a></li>
+            <li><a href=" {{ url('/modal') }}">Register</a></li>
+
+            
+
+            <!--<li><a href="{{ route('get_register')}}">Register</a></li>-->
+            
+
+
 
             @else
 
@@ -31,7 +38,6 @@
             <li><a> Welcome, {{ $currentUser->name }}</a></li>
             <li><a href="http://localhost/forum/public/">Home</a></li>
             <li><a href="{{ route('get_post')}}">Create New Topic</a></li>
-            <li><a href="{{ route('get_logout')}}">Log Out</a></li>
 
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="position:relative; padding-left:50px;">
@@ -40,7 +46,7 @@
              </a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="{{ url('/profile') }}"><i class="fa fa-btn fa-user"></i>Profile</a></li>
-            <li><a href="#">Account</a></li>
+            <li><a href="{{ url('/account') }}">Account</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="{{ route('get_logout')}}">Log Out</a></li>
           </ul>
@@ -49,3 +55,5 @@
 
             @endif
 </nav>
+
+</div>

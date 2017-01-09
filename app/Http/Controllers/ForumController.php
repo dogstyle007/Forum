@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\ModelNotFoundExcpetion;
 
+
 class ForumController extends Controller
 {
     function __construct()
@@ -170,13 +171,13 @@ class ForumController extends Controller
                 notify()->flash('<h3>Post updated successfully</h3>', 'success', ['timer' => 2000]);
 
                 return redirect('/');
+                    }
+                }
+                catch(ModelNotFoundExcpetion $ex)
+                {
+                    return redirect('/');
+                }
             }
-        }
-        catch(ModelNotFoundExcpetion $ex)
-        {
-            return redirect('/');
-        }
-    }
 
 }
 

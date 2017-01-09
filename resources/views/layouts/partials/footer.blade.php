@@ -64,11 +64,13 @@
 
   <body>
 
-
+<div class="container">
     <!-- Part 1: Wrap all page content here -->
     <div id="wrap">
 
-      <div id="push"></div>
+      <div id="push">
+        
+      </div>
     </div>
 
     <div id="footer">
@@ -76,15 +78,15 @@
       <div class="container-fluid">
             <ul class="nav nav-pills nav-justified">
                 <li><a href="http://localhost/forum/public/">© 2016 Wisconsin Forum.</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="{{ url('/terms') }}">Terms of Service</a></li>
+                <li><a href="{{ url('/privacy') }}">Privacy</a></li>
+                <li><a href="{{ url('/about') }}">About Us</a></li>
             </ul>
             <p align="center"><b>Disclaimer: </b> Every Wisconsin member is <b> solely responsible </b> for <b> anything </b>that he/she <b> posts </b> on Wisconsin Forum.</p>
         </div>    
     </nav>
     </div>
-
+</div>
 
   </body>
 </html>

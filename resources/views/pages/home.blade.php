@@ -18,7 +18,6 @@
   </div>
 </div>--}}
 
-
 @include('layouts.partials.slider')
 
 
@@ -45,7 +44,7 @@
               <br>
              
              <u>
-             <p class="text-right"> By: {{$post->user->name}} <img src="/forum/public/uploads/avatars/{{ $post->user->avatar }}" style="width:32px; height:32px; top:10px; left:10px; border-radius:50%"></p>
+             <p class="text-right"> By: {{$post->user->name }} <img src="/forum/public/uploads/avatars/{{ $post->user->avatar }}" style="width:32px; height:32px; top:10px; left:10px; border-radius:50%"> <br> {{$post->user->dept }} </p>
              </u>
 
             
@@ -103,12 +102,9 @@
 
       <center>{!! $posts->appends(Request::all())->render() !!}</center>
 
-      
-    @include('layouts.partials.footer')
-
 
     </div> <!-- /container -->
 
-
+     @include('layouts.partials.footer')
 
     @stop
