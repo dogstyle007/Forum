@@ -77,7 +77,13 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
             <ul class="nav nav-pills nav-justified">
-                <li><a href="http://localhost/forum/public/">© 2016 Wisconsin Forum.</a></li>
+                <li><a href="http://localhost/forum/public/">© 
+                <script type="text/javascript">
+                  var year = new Date();
+                  year = year.getYear();
+                  document.write(year);
+                </script>
+                Wisconsin Forum.</a></li>
                 <li><a href="{{ url('/terms') }}">Terms of Service</a></li>
                 <li><a href="{{ url('/privacy') }}">Privacy</a></li>
                 <li><a href="{{ url('/about') }}">About Us</a></li>
