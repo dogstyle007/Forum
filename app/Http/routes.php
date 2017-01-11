@@ -46,7 +46,16 @@ Route::post('profile', 'UserController@update_avatar');
 
 Route::group(['prefix' => 'auth'], function(){
 
-	Route::get('register', [
+	// Authentication routes...
+	Route::get('login', 'Auth\AuthController@getLogin');
+	Route::post('login', 'Auth\AuthController@postLogin');
+	Route::get('logout', 'Auth\AuthController@getLogout');
+
+	// Registration routes...
+	Route::get('register', 'Auth\AuthController@getRegister');
+	Route::post('register', 'Auth\AuthController@postRegister');
+
+	/*Route::get('register', [
 		'as' => 'get_register',
 		'uses' => 'Auth\AuthController@getRegister'
 		]);
@@ -81,7 +90,7 @@ Route::group(['prefix' => 'auth'], function(){
 	Route::get('logout', [
 		'as' => 'get_logout',
 		'uses' => 'Auth\AuthController@getLogout'
-	]);
+	]);*/
 
 });
 

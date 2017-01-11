@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <!-- CSS -->
-    <link href="http://localhost/forum/public/css/style.css" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <style type="text/css">
 
       /* Sticky footer styles
@@ -57,7 +57,7 @@
       /* Not required for template or sticky footer method. */
 
     </style>
-<link href="http://localhost/forum/public/css/style.css" rel="stylesheet">
+<link href="{{asset('css/style.css')}}" rel="stylesheet">
 
    
   </head>
@@ -77,7 +77,7 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
             <ul class="nav nav-pills nav-justified">
-                <li><a href="http://localhost/forum/public/">&copy; <?php echo date("Y"); ?> WIUC SRC FORUM.</a></li>
+
                 <li><a href="{{ url('/terms') }}">Terms of Service</a></li>
                 <li><a href="{{ url('/privacy') }}">Privacy</a></li>
                 <li><a href="{{ url('/about') }}">About Us</a></li>

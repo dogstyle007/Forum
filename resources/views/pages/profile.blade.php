@@ -28,7 +28,7 @@
             </div>
             <div class="panel-body">
               <div class="row">
-                <div class="col-md-3 col-lg-3 " align="center"> <img src="/forum/public/uploads/avatars/{{ $user->avatar }}" class="img-circle img-responsive"> </div>
+                <div class="col-md-3 col-lg-3 " align="center"> <img src="/uploads/avatars/{{ $user->avatar }}" class="img-circle img-responsive"> </div>
 
                 <form enctype="multipart/form-data" action="{{ url('/profile') }}" method="POST">
                 <label>Update Profile Image</label>
@@ -94,7 +94,8 @@
       </div>
     </div>
 
-    <script src="http://localhost/forum/public/js/profile.js"></script>
+    <script src="
+/js/profile.js"></script>
 
 
   @include('layouts.partials.footer')

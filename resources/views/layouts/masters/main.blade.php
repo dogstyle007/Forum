@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="http://localhost/forum/public/favicon.ico">
+    <link rel="icon" href="{{asset('favicon.ico')}}">
 
     <style type="text/css">
       body { background: #e8ece0 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
@@ -16,26 +16,17 @@
     <title>@yield('title')Wisconsin Forum</title>
 
     <!-- Bootstrap core CSS -->
-    
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    
-    <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-     <link href="http://localhost/forum/public/css/bootstrap.css" rel="stylesheet">
 
-    <link href="http://localhost/forum/public/css/style.css" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
-    <link href="http://localhost/forum/public/css/slider.css" rel="stylesheet">
+    <link href="{{asset('css/slider.css')}}" rel="stylesheet">
 
-    <link href="http://localhost/forum/public/css/profile.css" rel="stylesheet">
+    <link href="{{asset('css/profile.css')}}" rel="stylesheet">
 
-     <link href="http://localhost/forum/public/css/sweetalert.css" rel="stylesheet">
-
-   <!-- <link href="http://localhost/forum/public/css/summernote.css" rel="stylesheet"> -->
+     <link href="{{asset('css/sweetalert.css')}}" rel="stylesheet">
 
 <!-- include summernote css/js-->
-<link href="http://localhost/forum/public/summernote/summernote.css" rel="stylesheet">
+<link href="{{asset('summernote/summernote.css')}}" rel="stylesheet">
 
 <!-- include libraries(jQuery, bootstrap) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -59,20 +50,29 @@
     
    <center>
 
-            <a href="http://localhost/forum/public/"  class="g" title="Wisconsin I.T Forum">Wisconsin Forum</a>
+            <a href="
+/
+
+"  class="g" title="Wisconsin I.T Forum">Wisconsin Forum</a>
 
             @if( ! $currentUser )
             
 
             <li><a>Welcome, <b>Guest:</b></a></li>
-            <li><a href="http://localhost/forum/public/">Home</a></li>
+            <li><a href="
+/
+
+">Home</a></li>
             <li><a href="{{ route('get_login')}}">Login</a></li>
             <li><a href="{{ route('get_register')}}">Register</a></li>
 
             @else
 
             <li><a> Welcome, {{ $currentUser->name }}</a></li>
-            <li><a href="http://localhost/forum/public/">Home</a></li>
+            <li><a href="
+/
+
+">Home</a></li>
             <li><a href="{{ route('get_post')}}">Create New Topic</a></li>
             <li><a href="{{ route('get_logout')}}">Logout</a></li>
 
@@ -97,12 +97,12 @@
 
 
    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
-    <script src="http://localhost/forum/public/js/bootstrap.min.js"></script>
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
   
-    <script src="http://localhost/forum/public/js/sweetalert.min.js"></script>
-    <script src="http://localhost/forum/public/js/script.js"></script>
+    <script src="{{asset('js/sweetalert.min.js')}}"></script>
+    <script src="{{asset('js/script.js')}}"></script>
     
-    <script src="http://localhost/forum/public/summernote/summernote.js"></script>
+    <script src="{{asset('summernote/summernote.js')}}"></script>
    <!-- <script src="http://cdn.ckeditor.com/4.6.0/basic/ckeditor.js"></script>-->
 
     <script type="text/javascript">

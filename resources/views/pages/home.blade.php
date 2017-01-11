@@ -12,7 +12,8 @@
         <div class="jumbotron" style="box-shadow: 2px 2px 4px #000000;">
             <h2 class="text-center"><span style="color:#26A65B;">Welcome to Wisconsin International University College Forum </span>
             <center><div style="margin-top:10px;">
-                <img src="http://localhost/forum/public/image/WIUC-LOGO.png">
+                <img src="
+/image/WIUC-LOGO.png">
             </div></center>
         </div>
   </div>
@@ -24,7 +25,10 @@
 <div>
   
             <center><div class="btn-group" style="margin-top:50px;">
-                <a href="http://localhost/forum/public/" class="btn btn-lg btn-primary">Recent Posts</a>
+                <a href="
+/
+
+" class="btn btn-lg btn-primary">Recent Posts</a>
                 
             </div></center>
 
@@ -42,11 +46,14 @@
         <div class="well">
           <div class="media">
             <div class="media-body">
-              <h4 class="media-heading"><a href="http://localhost/forum/public/question/{{$post->slug}}">{{ $post->title}}</a></h4>
+              <h4 class="media-heading"><a href="
+/
+
+question/{{$post->slug}}">{{ $post->title}}</a></h4>
               <br>
              
              <u>
-             <p class="text-right"> By: {{$post->user->name }} <img src="/forum/public/uploads/avatars/{{ $post->user->avatar }}" style="width:32px; height:32px; top:10px; left:10px; border-radius:50%"> <br> {{$post->user->dept }} </p>
+             <p class="text-right"> By: {{$post->user->name }} <img src="/uploads/avatars/{{ $post->user->avatar }}" style="width:32px; height:32px; top:10px; left:10px; border-radius:50%"> <br> {{$post->user->dept }} </p>
              </u>
 
             
@@ -55,7 +62,10 @@
 
               
 
-              <a href="http://localhost/forum/public/question/{{$post->slug}}">Read more &rarr;</a>
+              <a href="
+/
+
+question/{{$post->slug}}">Read more &rarr;</a>
 
               <ul class="list-inline list-unstyled">
                 <li><span> <i class="glyphicon glyphicon-calendar">

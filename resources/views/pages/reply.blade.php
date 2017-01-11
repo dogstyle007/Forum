@@ -9,7 +9,7 @@
   <div>
   
             <center><div class="btn-group" style="margin-top:50px;">
-                <a href="http://localhost/forum/public/" class="btn btn-lg btn-primary">Recent Posts</a>
+                <a href="/" class="btn btn-lg btn-primary">Recent Posts</a>
                 
             </div></center>
 
@@ -22,9 +22,9 @@
         <div class="well">
           <div class="media">
             <div class="media-body">
-             <h4> <a href="http://localhost/forum/public/question/{{$post->slug}}">{{$post->title}}</a></h4>
+             <h4> <a href="/question/{{$post->slug}}">{{$post->title}}</a></h4>
 
-              <p class="text-right"> By: {{$post->user->name}} <img src="/forum/public/uploads/avatars/{{ $post->user->avatar }}" style="width:32px; height:32px; top:10px; left:10px; border-radius:50%"> <br> {{$post->user->dept }} </p>
+              <p class="text-right"> By: {{$post->user->name}} <img src="/uploads/avatars/{{ $post->user->avatar }}" style="width:32px; height:32px; top:10px; left:10px; border-radius:50%"> <br> {{$post->user->dept }} </p>
 
               {!! Markdown::parse ($post->body) !!}
               
@@ -41,7 +41,7 @@
              <div class="media">
                 <div class="media-body">
 
-                  <p class="text-right">By: {{$reply->user->name}} <img src="/forum/public/uploads/avatars/{{ $reply->user->avatar }}" style="width:32px; height:32px; top:10px; left:10px; border-radius:50%"> <br> {{$reply->user->dept }} </p>
+                  <p class="text-right">By: {{$reply->user->name}} <img src="/uploads/avatars/{{ $reply->user->avatar }}" style="width:32px; height:32px; top:10px; left:10px; border-radius:50%"> <br> {{$reply->user->dept }} </p>
 
                     <p>{{$reply->body}}</p>
 
@@ -70,7 +70,7 @@
 
              @if( ! $currentUser )
             
-             <p> (You must <a href="{{ route('get_login')}}"> <b>LOGIN!</b></a> or <a href="{{ route('get_register')}}">Register</a> to reply here.)</p>
+             <p> (You must <a href="{{ url('auth/login') }}"> <b>LOGIN!</b></a> or <a href="{{ url('auth/register') }}">Register</a> to reply here.)</p>
 
             @else
 

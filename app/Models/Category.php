@@ -20,7 +20,7 @@ class Category extends Model
      *
      * @var array
      */
-    protected $fillable = ['name'];
+    protected $fillable = ['name','type'];
 
     /**
      * The attributes excluded from the model's JSON form.

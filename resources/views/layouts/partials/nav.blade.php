@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <img src="http://localhost/forum/public/image/WIUC-LOGO.png"> <a href="http://localhost/forum/public/" class="g" title="Wisconsin I.T Forum"> WIUC SRC FORUM</a>
+      <img src="/image/WIUC-LOGO.png"> <a href="/" class="g" title="Wisconsin I.T Forum"> WIUC SRC FORUM</a>
     </div>
     <br>
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,13 +21,13 @@
 
             
             <li><a>Welcome, <b>Guest:</b></a></li>
-            <li><a href="http://localhost/forum/public/">Home</a></li>
-            <li><a href="{{ route('get_login')}}"> <b>LOGIN!</b></a></li>
-            <li><a href=" {{ url('/modal') }}">Register</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="{{ url('auth/login') }}"> <b>LOGIN!</b></a></li>
+            <li><a href=" {{ url('/auth/register') }}">Register</a></li>
 
             
 
-            <!--<li><a href="{{ route('get_register')}}">Register</a></li>-->
+            <!--<li><a href="/auth/register">Register</a></li>-->
             
 
 
@@ -36,19 +36,20 @@
 
             
             <li><a> Welcome, {{ $currentUser->name }}</a></li>
-            <li><a href="http://localhost/forum/public/">Home</a></li>
+            <li><a href="
+/">Home</a></li>
             <li><a href="{{ route('get_post')}}">Create New Topic</a></li>
 
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="position:relative; padding-left:50px;">
-          <img src="/forum/public/uploads/avatars/{{ Auth::user()->avatar }}" style="width:32px; height:32px; position:absolute; top:10px; left:10px; border-radius:50%">
+          <img src="/uploads/avatars/{{ Auth::user()->avatar }}" style="width:32px; height:32px; position:absolute; top:10px; left:10px; border-radius:50%">
             Profile <span class="caret"></span>
              </a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="{{ url('/profile') }}"><i class="fa fa-btn fa-user"></i>Profile</a></li>
             <li><a href="{{ url('/account') }}"><i class="fa fa-cog" aria-hidden="true"></i>Account</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="{{ route('get_logout')}}"><i class="fa fa-sign-out" aria-hidden="true"></i>Log Out</a></li>
+
           </ul>
         </li>
       </ul>

@@ -51,8 +51,9 @@ class AuthController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|max:255',
-            'index' => 'required|max:12|min:12|alpha_dash|unique:users',
-            'dept' => 'required|max:7|min:3|alpha',
+            'index' => 'regex:/\\b\\w{4}[-.]?\\d{2}[-.]?\\d{4}\\b/',
+            'role' => 'required',
+            'dept' => 'required',
             'gender' => 'required|max:6|min:4|alpha',
             'email' => 'required|email|max:255|unique:users', 
             'password' => 'required|min:6',
@@ -67,6 +68,13 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
+        $approved = 1;
+        $isteacher = 0;
+        $number = null;
+        if($data['role']=='staff'){
+            $approved = 0;
+            $isteacher = 1;
+        }
         return User::create([
             'name' => $data['name'],
             'index' => $data['index'],
@@ -74,7 +82,8 @@ class AuthController extends Controller
             'gender' => $data['gender'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-
+            'isteacher' => $isteacher,
+            'approved' => $approved
         ]);
     }
 }
