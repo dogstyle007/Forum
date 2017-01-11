@@ -10,7 +10,7 @@
     <link rel="icon" href="http://localhost/forum/public/favicon.ico">
 
     <style type="text/css">
-      body { background: #c4c4c4 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+      body { background: #e8ece0 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
     </style>
 
     <title>@yield('title')Wisconsin Forum</title>
