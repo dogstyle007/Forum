@@ -16,10 +16,12 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('index');
-            $table->string('dept');
+            $table->integer('dept');
             $table->string('gender');
             $table->string('email')->unique();
             $table->string('avatar')->default('default.jpg');
+            $table->boolean('isteacher')->default(0);
+            $table->boolean('approved')->default(0);
             $table->string('password', 60);
             $table->rememberToken();
             $table->timestamps();

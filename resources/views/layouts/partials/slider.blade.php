@@ -10,7 +10,8 @@
 
   <div class="carousel-inner">
     <div class="item active">
-      <a href="#"><img src="http://localhost/forum/public/image/wiuc-campus.jpg" /></a>
+      <a href="#"><img src="
+/image/wiuc-campus.jpg" /></a>
       	<div class="hero">
         <hgroup>
             <h3>Welcome to Wisconsin International University College Src Forum</h3>        
@@ -20,7 +21,8 @@
       </div>
     </div>
     <div class="item">
-      <a href="#"><img src="http://localhost/forum/public/image/wiuc-admission-banner-2017.jpg" /></a>
+      <a href="#"><img src="
+/image/wiuc-admission-banner-2017.jpg" /></a>
       <div class="hero">
         {{--<hgroup>
             <h1>Search for</h1>        
@@ -31,7 +33,8 @@
       </div>
     </div>
     <div class="item">
-      <a href="#"><img src="http://localhost/forum/public/image/wiuc-maps.png" /></a>
+      <a href="#"><img src="
+/image/wiuc-maps.png" /></a>
       <div class="hero">
         {{--<hgroup>
             <h1>Search for</h1>        

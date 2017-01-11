@@ -10,7 +10,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="http://localhost/forum/public/" class="g" title="Wisconsin I.T Forum"> {Wizzy|Hub}</a>
+      <a href="
+/
+
+" class="g" title="Wisconsin I.T Forum"> {Wizzy|Hub}</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,7 +24,10 @@
 
             <li id="clockDisplay"></li>
             <li><a>Welcome, <b>Guest:</b></a></li>
-            <li><a href="http://localhost/forum/public/">Home</a></li>
+            <li><a href="
+/
+
+">Home</a></li>
             <li><a href="{{ route('get_login')}}"> <b>LOGIN!</b></a></li>
             <li><a href="{{ route('get_register')}}">Register</a></li>
 
@@ -29,7 +35,10 @@
 
             <li id="clockDisplay"></li>
             <li><a> Welcome, {{ $currentUser->name }}</a></li>
-            <li><a href="http://localhost/forum/public/">Home</a></li>
+            <li><a href="
+/
+
+">Home</a></li>
             <li><a href="{{ route('get_post')}}">Create New Topic</a></li>
             <li><a href="{{ route('get_logout')}}">Log Out</a></li>
 

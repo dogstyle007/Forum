@@ -28,7 +28,7 @@ class User extends Model implements AuthenticatableContract,
      *
      * @var array
      */
-    protected $fillable = ['name', 'index', 'dept', 'gender', 'email', 'password'];
+    protected $fillable = ['name', 'index', 'dept', 'gender', 'email', 'password', 'number','isteacher','avatar'];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -40,5 +40,10 @@ class User extends Model implements AuthenticatableContract,
     public function posts()
     {
         return $this->hasMany('App\Models\Post');
+    }
+
+    public function department()
+    {
+        return $this->hasMany('App\Models\Category', 'dept');
     }
 }

@@ -8,7 +8,7 @@
 <div>
   
             <center><div class="btn-group" style="margin-top:50px;">
-                <a href="http://localhost/forum/public/" class="btn btn-lg btn-primary">Recent Posts</a>
+                <a href="/" class="btn btn-lg btn-primary">Recent Posts</a>
                 
             </div></center>
 
