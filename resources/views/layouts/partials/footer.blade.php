@@ -77,10 +77,7 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
             <ul class="nav nav-pills nav-justified">
-                <li><a href="
-/
 
-">© 2016 Wisconsin Forum.</a></li>
                 <li><a href="{{ url('/terms') }}">Terms of Service</a></li>
                 <li><a href="{{ url('/privacy') }}">Privacy</a></li>
                 <li><a href="{{ url('/about') }}">About Us</a></li>

@@ -47,9 +47,9 @@
              </a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="{{ url('/profile') }}"><i class="fa fa-btn fa-user"></i>Profile</a></li>
-            <li><a href="{{ url('/account') }}">Account</a></li>
+            <li><a href="{{ url('/account') }}"><i class="fa fa-cog" aria-hidden="true"></i>Account</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="{{url('/auth/logout')}}">Log Out</a></li>
+
           </ul>
         </li>
       </ul>

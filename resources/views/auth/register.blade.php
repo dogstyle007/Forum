@@ -2,7 +2,6 @@
 
 @section('page-content')
 
-<div class="container">
 
 	{{--@include('layouts.partials.nav')--}}
 
@@ -92,8 +91,3 @@
 		});
 	</script>
 
-</div> <!-- /container -->
-
-
-
-@stop
